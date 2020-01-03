@@ -3,7 +3,43 @@ body {
   color: var(--color-02);
 }
 
+.site-inner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  min-height: 420px;
+}
+
+#home-intro {
+  grid-column: 1 / -1;
+}
+
+#home-content-one {
+  grid-column: span 6;
+  background-color: var(--color-03);
+  text-align: center;
+}
+
+#home-content-two {
+  grid-column: span 6;
+  background-color: var(--color-04);
+  text-align: center;
+}
+
+#home-content-three {
+  grid-column: span 6;
+  background-color: var(--color-04);
+  text-align: center;
+}
+
+#home-content-four {
+  grid-column: span 6;
+  background-color: var(--color-03);
+  text-align: center;
+}
+
 :root {
   --color-01: #000000;
   --color-02: #FFFFFF;
+  --color-03: #c02080;
+  --color-04: #2080c0;
 }
